@@ -8,6 +8,7 @@
 [Play This Sound : Hi](https://amirisback.github.io/text-to-speech/sample_output/VOICE%202023-04-06%2016%3A40%3A46.979137.mp3)
 
 ## Reference
+- https://github.com/jamalbalya/GoogleTextToSpeech
 - w3school.com - https://www.w3schools.com/python
 
 ## Tools
@@ -23,6 +24,7 @@ Very open to anyone, I'll write your name under this, please contribute by sendi
 - Example : Github_amirisback_kotlin_admob-helper-implementation
 
 Name Of Contribute
+- Jamal Balya
 - Muhammad Faisal Amir
 - Waiting List
 - Waiting List
