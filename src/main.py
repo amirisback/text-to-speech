@@ -1,29 +1,48 @@
-import datetime
 import os
 
-from gtts import gTTS
-from datetime import datetime
+from src.text_to_speech import speak
 
 # Directory
 dir_output = "output"
-# Path
-path = os.path.join(dir_output)
-
-try:
-    os.makedirs(path, exist_ok=True)
-    print("Directory '%s' created successfully" % dir_output)
-except OSError as error:
-    print("Directory '%s' can not be created" % dir_output)
 
 
-def speak(text):
-    today = datetime.now()
-    tts = gTTS(text=text, lang="en")
-    filename = dir_output + "/VOICE {}.mp3".format(today)
-    tts.save(filename)
+def create_folder_output():
+    # Path
+    path = os.path.join(dir_output)
+
+    try:
+        os.makedirs(path, exist_ok=True)
+        print("Directory '%s' created successfully" % dir_output)
+        print("---------------------------------------------------------------")
+    except OSError as error:
+        print("Directory '%s' can not be created" % dir_output)
+        print("---------------------------------------------------------------")
 
 
-speak("Hi")
-speak("Hello")
-speak("How Are You?")
-speak("Can I Help You?")
+def welcome_message():
+    print("---------------------------------------------------------------")
+    print("TEXT TO SPEECH")
+    print("Design By : M. Faisal Amir")
+    print("Github    : www.github.com/amirisback")
+    print("---------------------------------------------------------------")
+
+
+def generate_speak(text):
+    speak(dir_output, text)
+
+
+def create_audio():
+    generate_speak("Hi")
+    generate_speak("Hello")
+    generate_speak("How Are You?")
+    generate_speak("Can I Help You?")
+
+
+def main():
+    welcome_message()
+    create_folder_output()
+    create_audio()
+
+
+if __name__ == "__main__":
+    main()
