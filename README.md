@@ -1,16 +1,11 @@
-## Music Compressor
+## Text To Speech
 - v1.0.0 Development
 
 ## Screen Shot
+![ss](docs/image/ss_1.png?raw=true)
 
-### Before Compress
-![ss](docs/image/music_size_ori.png)
+## Try Sound
 
-### Result Compress
-![ss](docs/image/music_size_compres.png)
-
-### Runer
-![ss](docs/image/ss_1.png)
 
 ## Reference
 - w3school.com - https://www.w3schools.com/python
