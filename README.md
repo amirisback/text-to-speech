@@ -1,6 +1,9 @@
 ## Text To Speech
 - v1.0.0 Development
 
+## Inspired
+- [Jamal Balya](https://github.com/jamalbalya)
+
 ## Screen Shot
 ![ss](docs/image/ss_1.png?raw=true)
 
